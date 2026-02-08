@@ -29,6 +29,8 @@ public class Main {
             }
             else if ((userChoice.equals("rock") && computerChoice.equals("scissors")) || (userChoice.equals("paper") && computerChoice.equals("rock")) || (userChoice.equals("scissors") && computerChoice.equals("paper"))){
                 System.out.println("You win!");
+                System.out.println("Would you like to play again? (yes/no) ");
+                playAgain = sc.nextLine().toLowerCase();
             }
             else {
                 System.out.println("You lose!");
@@ -36,5 +38,6 @@ public class Main {
                 playAgain = sc.nextLine().toLowerCase();
             }
         }while (playAgain.equals("yes"));
+        System.out.println("Thanks for playing!");
     }
 }
